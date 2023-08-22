@@ -1,0 +1,2 @@
+SELECT Country 
+FROM Suppliers
