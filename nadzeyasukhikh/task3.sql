@@ -1,2 +1,2 @@
-SELECT Country 
-FROM Suppliers
+SELECT DISTINCT Country 
+FROM Suppliers;
