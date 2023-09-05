@@ -3,7 +3,6 @@ CREATE TABLE IF NOT EXISTS Orders (
     user_id INT,
     employee_id INT,
     created_at DATE,
-    shipper_id INT
+    shipper_id INT,
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
-
--- ))
