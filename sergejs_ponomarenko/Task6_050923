@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS Orders (
-	corder_id int primary key AUTO_INCREMENT,
+	order_id int primary key AUTO_INCREMENT,
   	created_at timestamp DEFAULT CURRENT_TIMESTAMP,
   	supplier_id int,
   	customer_id int,
@@ -7,5 +7,5 @@ CREATE TABLE IF NOT EXISTS Orders (
   	FOREIGN KEY (supplier_id) REFERENCES Suppliers(supplier_id),
   	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
   	FOREIGN KEY (product_id) REFERENCES products(product_id),
-  	isCompleted boolean DEFAULT false
+  	is_сompleted boolean DEFAULT false
 );
